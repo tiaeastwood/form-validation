@@ -1,9 +1,3 @@
-<style>
-img {
-  width: 49%;
-}
-</style>
-
 # Responsive Signup Form With Validation
 
 ## Table of Contents
@@ -22,8 +16,8 @@ This is personal project that I worked on in order to gain further experience cr
 
 ## Screenshots
 
-<img src="img/screenshot-form-1.png" width="400">
-<img src="img/screenshot-form-2.png" width="400">
+<img src="img/screenshot-form-1.png" width="600">
+<img src="img/screenshot-form-2.png" width="600">
 
 ## Demo
 

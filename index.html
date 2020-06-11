@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="container">
+        <form id="form" class="form">
+          <h2>Begin Your Adventure!</h2>
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="JohnDoe" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="example@example.com" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter a password"
+            />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password2">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmation"
+              placeholder="Enter the password again"
+            />
+            <small>Error message</small>
+          </div>
+          <div id="terms">
+            <input type="checkbox" id="terms" name="terms" value="accept" />
+            <label id="terms" for="terms">
+              <small
+                >I agree to the <a href="#">terms of service</a></small
+              ></label
+            >
+          </div>
+          <button type="submit"><span>REGISTER</span></button>
+          <small id="signin">Already a member? <a href="#">sign in</a></small>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

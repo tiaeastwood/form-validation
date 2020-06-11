@@ -21,7 +21,7 @@ This is personal project that I worked on in order to gain further experience cr
 
 ## Demo
 
-[Click here to view the live demo version of the form](https://www.tiaeastwood.com/form-validation/)
+<a href="https://www.tiaeastwood.com/form-validation/" target="_blank">Click here to view the live demo of the form</a>
 
 ## Technologies
 

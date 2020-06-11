@@ -22,12 +22,12 @@ This is personal project that I worked on in order to gain further experience cr
 
 ## Screenshots
 
-![Example screenshot](img/screenshot-form-1.png)
-![Example screenshot](img/screenshot-form-2.png)
+<img src="img/screenshot-form-1.png" width="400">
+<img src="img/screenshot-form-2.png" width="400">
 
 ## Demo
 
-[Click here to view the demo version of the form]()
+[Click here to view the live demo version of the form](https://www.tiaeastwood.com/form-validation/)
 
 ## Technologies
 

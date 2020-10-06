@@ -3,6 +3,10 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("confirmation");
+const formControls = document.getElementsByClassName('form-control')
+console.log('formControls', formControls)
+console.log('formControls0', formControls[0])
+
 
 // Show input error message
 function showError(input, message) {
@@ -68,13 +72,22 @@ function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
-// Event listeners
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
 
-  checkRequired([username, email, password, password2]);
-  checkLength(username, 3, 15);
-  checkLength(password, 6, 25);
-  checkEmail(email);
-  checkPasswordsMatch(password, password2);
+
+
+// form submit event listeners
+form.addEventListener("submit", (event) => {
+  // call the functions
+  checkRequired([username, email, password, password2])
+  checkLength(username, 3, 15)
+  checkLength(password, 6, 25)
+  checkEmail(email)
+  checkPasswordsMatch(password, password2)
+
+  // if the form inputs DON'T have class of valid - prevent default
+  if (!formControls[0].classList.contains('success') || !formControls[1].classList.contains('success') || !formControls[2].classList.contains('success') || !formControls[3].classList.contains('success')) {
+    event.preventDefault()
+  } else {
+    //go to page
+  }
 });

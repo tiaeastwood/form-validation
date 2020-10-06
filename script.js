@@ -67,12 +67,10 @@ function checkPasswordsMatch(input1, input2) {
   }
 }
 
-// Get fieldname
+// Get fieldname to display in error message
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
-
-
 
 
 // form submit event listeners
@@ -88,6 +86,6 @@ form.addEventListener("submit", (event) => {
   if (!formControls[0].classList.contains('success') || !formControls[1].classList.contains('success') || !formControls[2].classList.contains('success') || !formControls[3].classList.contains('success')) {
     event.preventDefault()
   } else {
-    //go to page
+    //go to success page
   }
 });
